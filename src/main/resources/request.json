@@ -1,0 +1,23 @@
+{
+  "requests":[
+    {
+      "inputConfig": {
+        "gcsSource": {
+          "uri": "gs://cloud-samples-data/vision/pdf_tiff/census2010.pdf"
+        },
+        "mimeType": "application/pdf"
+      },
+      "features": [
+        {
+          "type": "DOCUMENT_TEXT_DETECTION"
+        }
+      ],
+      "outputConfig": {
+        "gcsDestination": {
+          "uri": "gs://neat-vent-381323-ocrdev/ocr_results"
+        },
+        "batchSize": 1
+      }
+    }
+  ]
+}
